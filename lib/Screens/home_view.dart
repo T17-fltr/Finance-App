@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:iconsax/iconsax.dart';
+
 
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
@@ -15,6 +17,38 @@ class HomeScreen extends StatelessWidget{
         child: Stack(
           children: [
             Scaffold(
+              appBar: AppBar(
+                elevation: 0,
+                backgroundColor: const Color(0xFFF1A1A1A),
+                title: const Text(
+                  'Dashboard',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                actions: [
+      IconButton(
+        onPressed: () {
+          // Profile button action
+        },
+        icon: const Icon(
+          Iconsax.user,
+          color: Colors.white,
+        ),
+      ),
+      IconButton(
+        onPressed: () {
+          // Notification button action
+        },
+        icon: const Icon(
+          Iconsax.notification,
+          color: Colors.white,
+        ),
+      ),
+      const SizedBox(width: 8),
+    ],
+              ),
               backgroundColor:Color(0xFF1A1A1A),
               body: SafeArea(
                 child: Column(
