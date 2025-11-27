@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
               border: Border.all(color: Color(0xFF3A3A3A), width: 1),
             ),
             child: ClipOval(
-              child: Image.asset("assets/images/user.png", fit: BoxFit.cover),
+              child: Image.asset("assets/images/user.jpg", fit: BoxFit.cover),
             ),
           ),
           Row(

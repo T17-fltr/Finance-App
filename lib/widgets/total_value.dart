@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import "package:flutter/material.dart";
 
 class TotalValueSection extends StatelessWidget {
   const TotalValueSection({super.key});
@@ -17,9 +16,7 @@ class TotalValueSection extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-
         SizedBox(height: 8),
-
         Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -52,66 +49,6 @@ class TotalValueSection extends StatelessWidget {
               ),
             ),
           ],
-        ),
-
-        SizedBox(height: 25),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
-            ActionButton(
-              icon: Iconsax.add,
-              label: "Deposit",
-            ),
-            ActionButton(
-              icon: Iconsax.send,
-              label: "Send",
-            ),
-            ActionButton(
-              icon: Iconsax.document,
-              label: "Earn",
-            ),
-            ActionButton(
-              icon: Iconsax.more,
-              label: "Swap",
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
-class ActionButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const ActionButton({
-    super.key,
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 60,
-          height: 60,
-          decoration: BoxDecoration(
-            color: Color(0xFF2A2A2A),
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Icon(icon, color: Colors.white, size: 26),
-        ),
-        SizedBox(height: 8),
-        Text(
-          label,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 12,
-          ),
         ),
       ],
     );
